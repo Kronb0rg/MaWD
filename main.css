@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+input {
+  border: 0;
+  padding: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  font-weight: bold;
+  color: rgb(62, 68, 89);
+  -webkit-box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
+  box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+input:focus,
+input:hover {
+  color: rgb(247, 125, 107);
+  animation: ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  color: rgb(247, 125, 107);
+  padding-bottom: 10vh;
+  padding-top: 30vh;
+}
+
+body {
+  background-color: rgb(205, 223, 236);
+}

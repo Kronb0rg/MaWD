@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar-placement-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(205, 223, 236);
+  color: white;
+}
+.nav-bar-placement-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(205, 223, 236);
+  color: white;
+}
+.nav-bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
+
+.nav-bar-top ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-right: 5%;
+}
+
+.nav-bar-top li {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(62, 68, 89);
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  letter-spacing: 3px;
+  font-size: 10 px;
+  margin-left: 5%;
+}
+.logo a {
+  color: rgb(62, 68, 89);
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+
+.whitespace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100em;
+  margin-top: 25em;
+}
+
+.whitespace a {
+  background-color: rgb(205, 223, 236);
+  padding: 1em;
+  text-decoration: none;
+  color: rgb(62, 68, 89);
+  font-weight: bold;
+  -webkit-box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
+  box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  border-radius: 1em;
+  margin-top: 5em;
+}
+
+.searchbar {
+  width: 10em;
+  height: 1.3em;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5em;
+  outline: none;
+  padding: 1em;
+}
