@@ -5,6 +5,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+  height: 100%;
+}
+
 .nav-bar-placement-bottom {
   position: fixed;
   bottom: 0;
@@ -31,8 +35,9 @@
 .nav-bar-top ul {
   display: flex;
   justify-content: space-between;
-  width: 60%;
-  margin-right: 5%;
+  width: 45%;
+  margin-right: 3em;
+
 }
 
 .nav-bar-top li {
@@ -54,14 +59,22 @@
   color: rgb(62, 68, 89);
   font-family: Raleway, sans-serif;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .whitespace {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100em;
-  margin-top: 25em;
+  height: 100%;
+  margin-top: 5em;
+  padding-bottom: 5em;
+}
+
+.whitespace h1{
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .whitespace a {
@@ -69,7 +82,7 @@
   padding: 1em;
   text-decoration: none;
   color: rgb(62, 68, 89);
-  font-weight: bold;
+  font-weight: 500;
   -webkit-box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
   box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
   cursor: pointer;
@@ -85,4 +98,38 @@
   border-radius: 5em;
   outline: none;
   padding: 1em;
+}
+
+p{
+  font-size: 1.2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+span{
+  color: red;
+  font-weight: bolder;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+ol li {
+  counter-increment: item;
+  margin-bottom: 2em;
+}
+ol li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: rgb(205,223,236);
+  border-radius: 100%;
+  color: rgb(62, 68, 89);;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
 }
