@@ -1,3 +1,10 @@
+:root {
+  --orangy: rgb(247, 125, 107);
+  --dark: #1f2937;
+  --darkdark: #111827;
+  --light: #f3f4f6;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,14 +31,14 @@ input {
 
 input:focus,
 input:hover {
-  color: rgb(247, 125, 107);
+  color: var(--orangy);
   animation: ease-in-out;
 }
 
 h1 {
   text-align: center;
   font-size: 2.3em;
-  color: rgb(247, 125, 107);
+  color: var(--orangy);
   padding-bottom: 10vh;
   padding-top: 30vh;
 }
@@ -39,3 +46,5 @@ h1 {
 body {
   background-color: rgb(205, 223, 236);
 }
+
+/* timer css*/
