@@ -67,6 +67,9 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
+.logo a:hover {
+  color: var(--orangy);
+}
 
 .whitespace {
   display: flex;
@@ -226,4 +229,8 @@ h2 {
 
 a{
   -webkit-tap-highlight-color: transparent;
+}
+
+a:hover{
+  color: var(--orangy)
 }
