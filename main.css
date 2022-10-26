@@ -48,4 +48,6 @@ body {
   background-color: rgb(205, 223, 236);
 }
 
-/* timer css*/
+form{
+  -webkit-tap-highlight-color: transparent;
+}
