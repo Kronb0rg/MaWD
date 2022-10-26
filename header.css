@@ -2,6 +2,7 @@
   --orangy: rgb(247, 125, 107);
   --babyblue: rgb(205, 223, 236);
   --font: rgb(62, 68, 89);
+  --background: rgb(244, 243, 243);
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body {
   height: 100%;
+  background-color: var(--background);
 }
 
 .nav-bar-placement-bottom {
@@ -158,6 +160,8 @@ button {
 button:hover {
   background-color: var(--orangy);
   animation: ease-in-out;
+  border-radius: 1em;
+  margin-bottom: 2em;
 }
 
 select {
@@ -214,4 +218,8 @@ h2 {
 
 #pick-number {
   margin-top: 2em;
+}
+
+.indent{
+  margin-bottom: 1em;
 }

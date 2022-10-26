@@ -33,6 +33,7 @@ input:focus,
 input:hover {
   color: var(--orangy);
   animation: ease-in-out;
+  border-radius: 1em;
 }
 
 h1 {
