@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/b8e6e7c565.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Top Header</title>
   </head>
   <body>
@@ -35,132 +37,193 @@
     </header>
 
     <!-- generated text-->
-    <div class="whitespace">
-      <h1>Find the three red words</h1>
-      <p>
-        I'm baby kale chips single-origin coffee ennui trust fund flannel.
-        Hoodie mukbang hashtag, bespoke synth enamel pin vice meditation brunch
-        poke distillery street art man bun. Seitan microdosing food truck
-        aesthetic blue bottle Brooklyn subway tile XOXO jianbing. Health goth
-        typewriter jianbing XOXO. Lumbersexual same schlitz tousled. IPhone
-        mukbang cold-pressed, post-ironic cred stumptown viral godard pop-up.
-        Sus tofu craft beer shabby chic, tote bag tattooed sartorial readymade
-        meggings viral. Bodega boys air plant before they sold out heirloom
-        try-hard. Organic forage scenester ennui, tote bag tattooed taxidermy
-        selvage. Kombucha chia woke chicharrones enamel pin tousled cloud bread
-        mixtape truffaut typewriter meggings. Typewriter waistcoat quinoa
-        narwhal fam hexagon vice gastropub banh mi. Yr copper mug vaporware,
-        literally truffaut 3 wolf moon food truck mlkshk thundercats aesthetic
-        banh mi schlitz single-origin coffee. Craft beer pinterest butcher
-        jianbing godard, sriracha migas XOXO venmo chartreuse pok pok portland.
-        Farm-to-table copper mug poutine, activated charcoal Brooklyn messenger
-        bag celiac. Coloring book photo booth vaporware pitchfork actually
-        cornhole post-ironic leggings organic farm-to-table jianbing occupy
-        vinyl echo park.
-      </p>
+    <h1 class="TheaderIdeah1">Press the button to find the word to type into the input field</h1>
+    <button onclick="genWord()">make words</button>    <h2 id="wordToType">Your generated word will appear here</h2>
 
-      <p>
-        Paleo bespoke schlitz blue bottle post-ironic cliche. Vice cornhole
-        butcher cold-pressed, squid neutra prism tumeric kitsch gatekeep
-        gochujang <span> literally</span>. Keffiyeh gochujang yes plz kinfolk
-        locavore hexagon, ascot mustache sus authentic squid ramps mixtape 3
-        wolf moon. Dreamcatcher whatever yes plz, affogato vibecession vegan
-        seitan offal scenester polaroid distillery kitsch chartreuse cardigan
-        blog. la croix disrupt bicycle rights 90's trust fund. Vexillologist
-        bodega boys biodiesel hell of big mood, fanny pack whatever af offal
-        crucifix gluten-free listicle subway tile artisan same. You probably
-        haven't heard of them ethical pour-over brunch gluten-free kogi. Keytar
-        cliche listicle organic four loko chicharrones kickstarter tote bag
-        meggings ascot offal. Vaporware biodiesel food truck health goth
-        knausgaard, meditation fam crucifix chia DSA pop-up heirloom synth
-        locavore. Lyft DIY poke freegan XOXO dreamcatcher pug. Air plant pop-up
-        Brooklyn copper mug vaporware quinoa, trust fund seitan cred.
-      </p>
+    <script>
+      function genWord() {
+        var word = [
+          "butcher",
+          "raw",
+          "tumblr",
+          "cliche",
+          "yolo",
+          "iphone",
+        ];
+        var wordFromList = document.getElementById("wordToType");
+        wordFromList.innerHTML = word[Math.floor(Math.random() * word.length)];
+      }
+    </script>
 
-      <p>
-        Cronut deep v helvetica cliche, JOMO banh mi ugh 90's pickled
-        distillery. Enamel pin cardigan photo booth hexagon, chicharrones quinoa
-        cornhole vinyl palo santo. Beard mukbang shabby chic drinking vinegar
-        vibecession edison bulb 8-bit, etsy man bun wolf. Yr affogato you
-        probably haven't heard of them flannel big mood PBR&B sus squid street
-        art skateboard. Etsy tumblr taxidermy four dollar toast enamel pin,
-        asymmetrical shoreditch green juice mustache seitan. Polaroid affogato
-        copper mug, knausgaard retro post-ironic jean shorts hashtag vegan
-        occupy PBR&B health goth poke slow-carb ramps. Chillwave edison bulb
-        forage pabst keytar succulents try-hard. Jianbing chicharrones ennui
-        knausgaard shabby chic tousled, chambray biodiesel. Ramps plaid
-        vexillologist, yr synth banh mi iceland prism glossier banjo kale chips
-        hammock sustainable vape VHS. Squid health goth lumbersexual mustache,
-        viral praxis irony yuccie everyday carry twee trust fund. Ennui cray
-        sartorial, drinking vinegar knausgaard sustainable trust fund prism kale
-        chips tofu paleo forage same JOMO.
-      </p>
+    <div class="form-div">
+      <input type="text" id="keyword" class="searchInput" placeholder="Search..." />
+    </div>
 
+    <div class="content">
       <p>
-        Paleo palo santo brunch gentrify, adaptogen organic direct trade.
-        Cornhole crucifix neutra, banjo narwhal slow-carb tbh trust fund
-        vibecession activated charcoal tattooed pop-up cred. Photo booth deep v
-        franzen Brooklyn palo santo woke drinking
-        <span>vinegar</span> fingerstache XOXO yuccie crucifix. Lo-fi meh tofu,
-        marfa cold-pressed gochujang etsy four dollar toast four loko live-edge
-        waistcoat portland helvetica banh mi VHS. Synth PBR&B fashion axe,
-        thundercats swag austin bodega boys big mood williamsburg literally
-        retro biodiesel banjo. Echo park selfies mixtape vegan whatever
-        wayfarers beard cray. Master cleanse gochujang post-ironic photo booth.
-        Leggings fingerstache microdosing banh mi. Street art helvetica
-        semiotics 3 wolf moon occupy hexagon you probably haven't heard of them
-        JOMO quinoa succulents jean shorts distillery big mood. Jianbing hashtag
-        seitan, iceland cliche kogi helvetica vaporware Brooklyn forage ramps
-        lo-fi venmo salvia. Before they sold out tousled echo park keffiyeh,
-        flexitarian portland woke jianbing butcher 90's yes plz DSA pabst
-        bitters fit. VHS forage echo park everyday carry before they sold out,
-        portland pour-over ascot kitsch 8-bit schlitz. Sus taxidermy af craft
-        beer, blog mixtape chia single-origin coffee fit you probably haven't
-        heard of them scenester kale chips jean shorts pinterest kombucha. Four
-        loko etsy street art waistcoat venmo, gatekeep vinyl lyft meggings cred
-        four dollar toast enamel pin. Disrupt af mixtape organic, everyday carry
-        hammock PBR&B unicorn. Migas raclette pork belly hot chicken ascot XOXO.
-        Cronut sriracha waistcoat, try-hard vegan hot chicken raw denim unicorn
-        iPhone blue bottle health goth tofu bitters same polaroid. Hot chicken
-        try-hard iceland narwhal photo booth. Freegan mixtape mlkshk XOXO
-        chicharrones prism blue bottle health goth whatever lumbersexual.
-        Authentic snackwave meggings, photo booth mixtape leggings air plant
-        swag cray cred helvetica venmo banjo.
-      </p>
-
-      <p>
-        Locavore tonx austin butcher bruh mukbang pickled migas gochujang
-        poutine sus pug. Cold-pressed vexillologist taiyaki selvage, occupy tonx
-        tousled banh mi organic farm-to-table seitan. Banjo mumblecore DSA
-        mixtape, deep v meggings gentrify bitters chillwave. Vice DIY health
-        goth swag farm-to-table, beard adaptogen DSA flexitarian air plant.
-        Quinoa photo booth iceland swag aesthetic farm-to-table keytar four loko
-        twee.Microdosing lumbersexual green juice sus. YOLO thundercats mlkshk
-        hexagon drinking vinegar twee schlitz authentic gluten-free PBR&B.
-        Pinterest aesthetic ramps shabby chic adaptogen activated charcoal four
-        dollar toast, 3 wolf moon you probably haven't heard of them flannel
-        narwhal. Scenester farm-to-table art party crucifix kitsch bushwick. Pug
-        farm-to-table flannel distillery activated charcoal chillwave put a bird
-        on it jean shorts. Church-key kinfolk live-edge, swag bicycle rights
-        hashtag succulents. Ramps cray slow-carb intelligentsia big mood flannel
-        freegan normcore messenger bag.
-      </p>
-
-      <p>
-        Mumblecore listicle street art, kombucha occupy air plant keytar hashtag
-        ugh normcore godard tbh actually hammock. Blue bottle flannel synth
-        succulents DIY ascot pork belly lo-fi mumblecore occupy fanny pack yes
-        plz single-origin coffee. Etsy kombucha subway tile enamel pin man
-        braid, whatever skateboard. Adaptogen fingerstache pop-up hoodie ugh
-        master cleanse craft beer tonx hexagon blue bottle health goth
-        chicharrones gastropub. Narwhal skateboard 3 wolf moon dreamcatcher
-        slow-carb taiyaki pinterest Brooklyn chambray subway tile. Mumblecore
-        affogato <span>vibecession</span> knausgaard cardigan godard. Church-key
-        etsy roof party, raclette gastropub biodiesel copper mug leggings blog
-        vice skateboard gatekeep stumptown glossier. Adaptogen locavore
-        vaporware prism, semiotics pabst tonx la croix marfa shabby chic edison
-        bulb chicharrones deep v XOXO.
+        I'm baby tote bag bespoke paleo leggings whatever four dollar toast
+        godard DSA drinking vinegar snackwave man braid ugh helvetica chambray.
+        Big mood cold-pressed pug chillwave bruh, taxidermy intelligentsia
+        distillery plaid godard copper mug waistcoat jianbing sartorial health
+        goth. Tattooed ascot four dollar toast glossier keytar, flexitarian echo
+        park. Schlitz leggings ascot jean shorts. Tofu post-ironic letterpress,
+        man bun williamsburg raw denim Brooklyn kogi mixtape woke fit chambray
+        XOXO. Hoodie slow-carb tumblr, bespoke chillwave kombucha subway tile.
+        Art party sustainable chillwave ennui tote bag health goth twee raclette
+        pok pok heirloom JOMO slow-carb. Fit chambray vegan 3 wolf moon,
+        gatekeep butcher meditation blue bottle. Small batch migas authentic
+        mukbang. Drinking vinegar salvia mustache lyft cliche thundercats ugh
+        taiyaki organic wayfarers af humblebrag franzen bodega boys bitters.
+        Retro locavore enamel pin try-hard kitsch pok pok microdosing DSA cray
+        photo booth vice man bun disrupt fit tacos. Jianbing scenester direct
+        trade mustache unicorn ethical slow-carb snackwave godard kitsch,
+        readymade photo booth vaporware succulents shoreditch. Prism letterpress
+        chambray vinyl semiotics vape vibecession small batch unicorn DIY banh
+        mi. Wolf farm-to-table fit, cornhole sustainable hella letterpress
+        chartreuse cliche austin shaman. Kickstarter distillery photo booth,
+        lumbersexual fanny pack waistcoat wolf palo santo umami PBR&B cardigan
+        gluten-free ramps post-ironic air plant. Deep v etsy echo park sus
+        paleo, truffaut messenger bag typewriter copper mug sustainable pork
+        belly asymmetrical subway tile irony twee. Blue bottle listicle woke
+        flannel tacos, master cleanse vexillologist cliche next level
+        dreamcatcher gentrify readymade disrupt cold-pressed. Vinyl copper mug
+        ennui, pok pok quinoa tbh 3 wolf moon. Green juice humblebrag brunch,
+        vexillologist edison bulb quinoa lumbersexual hashtag. Ascot readymade
+        hoodie, iPhone literally godard copper mug williamsburg. Letterpress
+        cray dreamcatcher shaman offal cornhole, wolf selvage deep v trust fund
+        jianbing disrupt church-key. IPhone migas normcore man bun fixie palo
+        santo thundercats bitters street art truffaut sriracha franzen
+        single-origin coffee. Fingerstache pok pok butcher scenester godard
+        chartreuse chia forage letterpress hella. Tofu humblebrag cornhole
+        aesthetic four loko gochujang mlkshk butcher plaid coloring book
+        knausgaard edison bulb hashtag flannel kogi. YOLO plaid humblebrag
+        typewriter live-edge. Tumblr hell of copper mug vice truffaut, butcher
+        four loko bodega boys hammock DSA brunch. Ennui Brooklyn prism portland
+        slow-carb viral aesthetic hell of fashion axe bodega boys DSA hashtag.
+        Prism marfa vinyl jean shorts. JOMO whatever taiyaki kombucha.
+        Single-origin coffee raclette artisan activated charcoal pitchfork
+        Brooklyn food truck art party raw denim cloud bread roof party hammock
+        palo santo taxidermy same. Wayfarers next level pug mumblecore XOXO
+        praxis pop-up you probably haven't heard of them cliche tumeric.
+        Chillwave beard slow-carb, health goth enamel pin before they sold out
+        kickstarter photo booth lyft flannel distillery. Helvetica activated
+        charcoal typewriter shoreditch kickstarter JOMO pop-up snackwave. Man
+        braid seitan pug thundercats irony helvetica disrupt chicharrones 90's
+        edison bulb glossier art party coloring book. Shabby chic raw denim
+        tumblr intelligentsia iceland, sus helvetica twee dreamcatcher selvage
+        gluten-free vibecession. Tbh kitsch denim everyday carry sus.
+        Butcher everyday carry freegan try-hard yuccie swag flannel DSA heirloom
+        praxis lo-fi hammock. Street art microdosing narwhal mlkshk actually,
+        same pickled. Williamsburg portland selvage mustache gastropub
+        meditation XOXO la croix messenger bag PBR&B leggings retro kitsch.
+        Hashtag keffiyeh post-ironic umami taxidermy heirloom poutine.
+        Gluten-free four loko wolf vice kogi 8-bit man bun williamsburg
+        gatekeep. Scenester leggings hell of, tbh pug ramps hammock unicorn
+        lumbersexual williamsburg put a bird on it offal. Pug fit kogi, cloud
+        bread you probably haven't heard of them mlkshk humblebrag keytar
+        kinfolk coloring book chartreuse. Freegan trust fund seitan, palo santo
+        cray irony street art pug. Cronut 90's microdosing austin. Listicle
+        ethical jianbing plaid, vape tilde squid poke butcher narwhal
+        vibecession neutra fixie skateboard pabst. Cold-pressed tattooed
+        gentrify, tumblr quinoa tbh street art messenger bag everyday carry tonx
+        seitan franzen jean shorts. Sustainable farm-to-table readymade master
+        cleanse biodiesel, sus fingerstache vibecession poke la croix. Copper
+        mug subway tile snackwave, succulents poutine mukbang cliche vinyl
+        cold-pressed slow-carb cray. Neutra deep v fam sriracha plaid.
       </p>
     </div>
+    <script>
+      function textFind(keyword) {
+        if (keyword) {
+          var content = $("p").text();
+          var searchText = new RegExp(keyword, "ig");
+          var matches = content.match(searchText);
+
+          if (matches) {
+            $("p").html(
+              content.replace(searchText, function (match) {
+                return "<span class='highlight'>" + match + "</span>";
+              })
+            );
+          } else {
+            $(".highlight").removeClass("highlight");
+          }
+        } else {
+          $(".highlight").removeClass("highlight");
+        }
+      }
+      $(document).ready(function () {
+        $("#keyword").on("keyup", function () {
+          textFind($(this).val());
+        });
+      });
+    </script>
+
+<div id="pick-number">
+  <select
+    name="animals"
+    id="rec_mode1"
+    class="dropdown"
+    onfocus="this.size=5"
+    onblur="this.size=1;"
+    onchange="this.size=1; this.blur();"
+  ></select>
+</div>
+</div>
+<button onclick="asnwerVerify()">Check answers</button>
+<h2 id="wrongOrRight"></h2>
+<!-- the script that creates the list of options an inserts it into the drop down menus -->
+<script>
+let optionList1 = document.getElementById("rec_mode1").options;
+let options = [
+  {
+    text: "1",
+    value: "yolo",
+  },
+  {
+    text: "2",
+    value: "iphone",
+  },
+  {
+    text: "3",
+    value: "raw",
+  },
+  {
+    text: "4",
+    value: "tumblr",
+  },
+  {
+    text: "5",
+    value: "cliche",
+  },
+  {
+    text: "6",
+    value: "butcher ",
+  },
+];
+options.forEach((option) =>
+  optionList1.add(new Option(option.text, option.value, option.selected))
+);
+</script>
+<script>
+function asnwerVerify() {
+  var svarmulighed1 = document.getElementById("rec_mode1");
+  var svar1 = svarmulighed1.options[svarmulighed1.selectedIndex].value;
+  var firstword = document.getElementById("wordToType").innerText;
+    console.log(svar1)
+    console.log(firstword)
+
+    if (
+          (firstword === svar1)
+        ) {
+          console.log("CORRECT");
+          document.getElementById("wrongOrRight").innerText = "Correct answer";
+        } else {
+          console.log("WRONG");
+          document.getElementById("wrongOrRight").innerText =
+            "One or more answers were wrong";
+        }
+}
+</script>
   </body>
 </html>

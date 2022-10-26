@@ -192,9 +192,17 @@
       <div>
         <!-- The three  drop down menus-->
         <div>
-          <select name="animals" id="rec_mode1" class="dropdown"></select>
-          <select name="animals" id="rec_mode2" class="dropdown"></select>
-          <select name="animals" id="rec_mode3" class="dropdown"></select>
+          <select name="animals" id="rec_mode1" class="dropdown" onfocus="this.size=10"
+          onblur="this.size=1;"
+          onchange="this.size=1; this.blur();"></select>
+          <select name="animals" id="rec_mode2" class="dropdown"
+          onfocus="this.size=10"
+          onblur="this.size=1;"
+          onchange="this.size=1; this.blur();"></select>
+          <select name="animals" id="rec_mode3" class="dropdown"
+          onfocus="this.size=10"
+          onblur="this.size=1;"
+          onchange="this.size=1; this.blur();"></select>
         </div>
       </div>
       <button onclick="answerChecker()">Check answers</button>
