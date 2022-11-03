@@ -81,9 +81,7 @@ body {
 }
 
 .whitespace h1 {
-  margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  text-align: center;
 }
 
 .whitespace a {
@@ -96,6 +94,11 @@ body {
   box-shadow: 5px 12px 20px -2px rgba(0, 0, 0, 0.23);
   border-radius: 1em;
   margin-top: 5em;
+}
+
+.whitespace button {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .searchbar {
@@ -142,30 +145,29 @@ ol li:before {
 }
 
 button {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  margin: auto;
-  background-color: var(--babyblue);
-  border: 0;
+  /* Placements */
+  width: 60%;
   padding: 1em;
   padding-right: 2em;
   padding-left: 2em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+  /* Visuals*/
   font-weight: 500;
+  background-color: var(--babyblue);
+  border: 0;
   color: rgb(62, 68, 89);
   -webkit-tap-highlight-color: transparent;
   -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.377);
   box-shadow: 0x 3px 10px -1px rgba(0, 0, 0, 0.23);
-  border-radius: 1em;
-  margin-bottom: 2em;
 }
 
 button:hover {
   -webkit-tap-highlight-color: transparent;
   background-color: var(--orangy);
-  animation: ease-in-out;
   border-radius: 1em;
   margin-bottom: 2em;
+  animation: ease-in-out;
 }
 
 select {
@@ -197,22 +199,17 @@ h2 {
   text-align: center;
 }
 
-.TheaderIdeah1 {
-  margin-top: 3em;
-}
-
 .form-div {
   text-align: center;
 }
 
 .searchInput {
-  margin-top: 2em;
   width: 80%;
   text-align: center;
   border-radius: 3em;
   border-style: none;
   background-color: var(--babyblue);
-  height: 2em;
+  height: 3em;
 }
 
 .content {
@@ -223,14 +220,33 @@ h2 {
   margin-top: 2em;
 }
 
-.indent{
+.indent {
   margin-bottom: 1em;
 }
 
-a{
+a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a:hover{
-  color: var(--orangy)
+a:hover {
+  color: var(--orangy);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tHeaderProductsTopInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5em;
+}
+.tHeaderProductsTopInfo button {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }

@@ -35,8 +35,14 @@
       </div>
     </header>
 
-    <h1 class="TheaderIdeah1">Press the button to find the word to type into the input field</h1>
-    <button onclick="genWord()">make words</button>    <h2 id="wordToType">Your generated word will appear here</h2>
+    <div class="tHeaderProductsTopInfo">    
+      <h1>Press the button to find the word to type into the input field</h1>
+      
+      <div class="buttonContainer"></div><button onclick="genWord()">make words</button>    
+      
+      <h2 id="wordToType">Your generated word will appear here</h2>
+    </div>
+
 
     <script>
       function genWord() {
@@ -168,8 +174,10 @@
   ></select>
 </div>
 </div>
-<button onclick="asnwerVerify()">Check answers</button>
-<h2 id="wrongOrRight"></h2>
+<div class="buttonContainer">
+  <button onclick="asnwerVerify()">Check answers</button>
+  <h2 id="wrongOrRight"></h2></div>
+
 <!-- the script that creates the list of options an inserts it into the drop down menus -->
 <script>
 let optionList1 = document.getElementById("rec_mode1").options;
