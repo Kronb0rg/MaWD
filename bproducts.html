@@ -33,10 +33,9 @@
       </div>
     </header>
 
-    <!-- all the text-content is in the div below-->
     <div class="whitespace">
-      <h1>Find the three red words</h1>
-      <button onclick="gentext()">Generate words</button>
+      <h1>Press the button and find the three red words</h1>
+      <button onclick="gentext()">make words</button>
       <p class="indent">
         I'm baby kale chips single-origin coffee ennui trust fund flannel.
         Hoodie mukbang hashtag, bespoke synth enamel pin vice meditation brunch
@@ -51,7 +50,7 @@
         mixtape truffaut typewriter meggings. Typewriter waistcoat quinoa
         narwhal fam hexagon vice gastropub banh mi. Yr copper mug vaporware,
         literally truffaut 3 wolf moon food truck mlkshk thundercats aesthetic
-        banh mi schlitz single-origin coffee. 
+        banh mi schlitz single-origin coffee.
       </p>
 
       <p class="indent">
@@ -64,10 +63,10 @@
         chartreuse cardigan blog. la croix disrupt bicycle rights 90's trust
         fund. Vexillologist bodega boys biodiesel hell of big mood, fanny pack
         whatever af offal crucifix gluten-free listicle subway tile artisan
-        same. Vaporware biodiesel food truck health goth knausgaard, meditation 
-        fam crucifix chia DSA pop-up heirloom synth locavore. Lyft DIY poke freegan
-        XOXO dreamcatcher pug. Air plant pop-up Brooklyn copper mug vaporware quinoa,
-        trust fund seitan cred.
+        same. Vaporware biodiesel food truck health goth knausgaard, meditation
+        fam crucifix chia DSA pop-up heirloom synth locavore. Lyft DIY poke
+        freegan XOXO dreamcatcher pug. Air plant pop-up Brooklyn copper mug
+        vaporware quinoa, trust fund seitan cred.
       </p>
 
       <p class="indent">
@@ -97,17 +96,15 @@
         Street art helvetica semiotics 3 wolf moon occupy hexagon you probably
         haven't heard of them JOMO quinoa succulents jean shorts distillery big
         mood. Jianbing hashtag seitan, iceland cliche kogi helvetica vaporware
-        Brooklyn forage ramps lo-fi venmo salvia.  Disrupt af
-        mixtape organic, everyday carry hammock PBR&B unicorn. Migas raclette
-        pork belly hot chicken ascot XOXO. Cronut sriracha waistcoat, try-hard
-        vegan hot chicken raw denim unicorn iPhone blue bottle health goth tofu
-        bitters same polaroid. Hot chicken try-hard iceland narwhal photo booth.
-        Freegan mixtape mlkshk XOXO chicharrones prism blue bottle health goth
-        whatever lumbersexual. Authentic snackwave meggings, photo booth mixtape
-        leggings air plant swag cray cred helvetica venmo banjo.
+        Brooklyn forage ramps lo-fi venmo salvia. Disrupt af mixtape organic,
+        everyday carry hammock PBR&B unicorn. Migas raclette pork belly hot
+        chicken ascot XOXO. Cronut sriracha waistcoat, try-hard vegan hot
+        chicken raw denim unicorn iPhone blue bottle health goth tofu bitters
+        same polaroid. Hot chicken try-hard iceland narwhal photo booth. Freegan
+        mixtape mlkshk XOXO chicharrones prism blue bottle health goth whatever
+        lumbersexual. Authentic snackwave meggings, photo booth mixtape leggings
+        air plant swag cray cred helvetica venmo banjo.
       </p>
-
-
 
       <p class="indent">
         Mumblecore listicle street art, kombucha occupy air plant keytar hashtag
@@ -126,143 +123,148 @@
       </p>
     </div>
 
-    <!-- all the script and menus are in the div below-->
-    <div>
-      <script>
-        function gentext() {
-          var word = [
-            "Cow",
-            "Cat",
-            "Dog",
-            "Horse",
-            "Bunny",
-            "Chicken",
-            "Monkey",
-            "Lion",
-            "Tiger",
-            "Whale",
-          ];
-          var para1 = document.getElementById("generatedOne");
-          var para2 = document.getElementById("generatedTwo");
-          var para3 = document.getElementById("generatedThree");
-          para1.innerHTML = word[Math.floor(Math.random() * word.length)];
-          para2.innerHTML = word[Math.floor(Math.random() * word.length)];
-          para3.innerHTML = word[Math.floor(Math.random() * word.length)];
-        }
-      </script>
+    <script>
+      function gentext() {
+        var word = [
+          "Cow",
+          "Cat",
+          "Dog",
+          "Horse",
+          "Bunny",
+          "Chicken",
+          "Monkey",
+          "Lion",
+          "Tiger",
+          "Whale",
+        ];
+        var para1 = document.getElementById("generatedOne");
+        var para2 = document.getElementById("generatedTwo");
+        var para3 = document.getElementById("generatedThree");
+        para1.innerHTML = word[Math.floor(Math.random() * word.length)];
+        para2.innerHTML = word[Math.floor(Math.random() * word.length)];
+        para3.innerHTML = word[Math.floor(Math.random() * word.length)];
+      }
+    </script>
 
+    <div>
+      <!-- The three  drop down menus-->
       <div>
-        <!-- The three  drop down menus-->
-        <div>
-          <select name="animals" id="rec_mode1" class="dropdown" onfocus="this.size=10"
-          onblur="this.size=1;"
-          onchange="this.size=1; this.blur();"></select>
-          <select name="animals" id="rec_mode2" class="dropdown"
+        <select
+          name="animals"
+          id="rec_mode1"
+          class="dropdown"
           onfocus="this.size=10"
           onblur="this.size=1;"
-          onchange="this.size=1; this.blur();"></select>
-          <select name="animals" id="rec_mode3" class="dropdown"
+          onchange="this.size=1; this.blur();"
+        ></select>
+        <select
+          name="animals"
+          id="rec_mode2"
+          class="dropdown"
           onfocus="this.size=10"
           onblur="this.size=1;"
-          onchange="this.size=1; this.blur();"></select>
-        </div>
+          onchange="this.size=1; this.blur();"
+        ></select>
+        <select
+          name="animals"
+          id="rec_mode3"
+          class="dropdown"
+          onfocus="this.size=10"
+          onblur="this.size=1;"
+          onchange="this.size=1; this.blur();"
+        ></select>
       </div>
+    </div>
+    <div class="buttonContainer">
       <button onclick="answerChecker()">Check answers</button>
       <h2 id="wrongOrRight"></h2>
-      <br /><br />
-      <!-- the script that creates the list of options an inserts it into the drop down menus -->
-      <script>
-        let optionList1 = document.getElementById("rec_mode1").options;
-        let optionList2 = document.getElementById("rec_mode2").options;
-        let optionList3 = document.getElementById("rec_mode3").options;
-        let options = [
-          {
-            text: "Cat",
-            value: "Value 1",
-          },
-          {
-            text: "Cow",
-            value: "Value 2",
-          },
-          {
-            text: "Dog",
-            value: "Value 3",
-          },
-          {
-            text: "Horse",
-            value: "Value 4",
-          },
-          {
-            text: "Bunny",
-            value: "Value 5",
-          },
-          {
-            text: "Chicken",
-            value: "Value 6",
-          },
-          {
-            text: "Monkey",
-            value: "Value 7",
-          },
-          {
-            text: "Lion",
-            value: "Value 8",
-          },
-          {
-            text: "Whale",
-            value: "Value 9",
-          },
-          {
-            text: "Tiger",
-            value: "Value 10",
-          },
-        ];
-        options.forEach((option) =>
-          optionList1.add(
-            new Option(option.text, option.value, option.selected)
-          )
-        );
-
-        options.forEach((option) =>
-          optionList2.add(
-            new Option(option.text, option.value, option.selected)
-          )
-        );
-        options.forEach((option) =>
-          optionList3.add(
-            new Option(option.text, option.value, option.selected)
-          )
-        );
-      </script>
-
-      <script>
-        function answerChecker() {
-          var firstword = document.getElementById("generatedOne").innerText;
-          var secondword = document.getElementById("generatedTwo").innerText;
-          var thirdword = document.getElementById("generatedThree").innerText;
-          var svarmulighed1 = document.getElementById("rec_mode1");
-          var svarmulighed2 = document.getElementById("rec_mode2");
-          var svarmulighed3 = document.getElementById("rec_mode3");
-
-          var svar1 = svarmulighed1.options[svarmulighed1.selectedIndex].text;
-          var svar2 = svarmulighed2.options[svarmulighed2.selectedIndex].text;
-          var svar3 = svarmulighed3.options[svarmulighed3.selectedIndex].text;
-
-          if (
-            (firstword === svar1) &
-            (secondword === svar2) &
-            (thirdword === svar3)
-          ) {
-            console.log("CORRECT");
-            document.getElementById("wrongOrRight").innerText =
-              "Correct answer";
-          } else {
-            console.log("WRONG");
-            document.getElementById("wrongOrRight").innerText =
-              "One or more answers were wrong";
-          }
-        }
-      </script>
     </div>
+
+    <!-- the script that creates the list of options an inserts it into the drop down menus -->
+    <script>
+      let optionList1 = document.getElementById("rec_mode1").options;
+      let optionList2 = document.getElementById("rec_mode2").options;
+      let optionList3 = document.getElementById("rec_mode3").options;
+      let options = [
+        {
+          text: "Cat",
+          value: "Value 1",
+        },
+        {
+          text: "Cow",
+          value: "Value 2",
+        },
+        {
+          text: "Dog",
+          value: "Value 3",
+        },
+        {
+          text: "Horse",
+          value: "Value 4",
+        },
+        {
+          text: "Bunny",
+          value: "Value 5",
+        },
+        {
+          text: "Chicken",
+          value: "Value 6",
+        },
+        {
+          text: "Monkey",
+          value: "Value 7",
+        },
+        {
+          text: "Lion",
+          value: "Value 8",
+        },
+        {
+          text: "Whale",
+          value: "Value 9",
+        },
+        {
+          text: "Tiger",
+          value: "Value 10",
+        },
+      ];
+      options.forEach((option) =>
+        optionList1.add(new Option(option.text, option.value, option.selected))
+      );
+
+      options.forEach((option) =>
+        optionList2.add(new Option(option.text, option.value, option.selected))
+      );
+      options.forEach((option) =>
+        optionList3.add(new Option(option.text, option.value, option.selected))
+      );
+    </script>
+
+    <script>
+      function answerChecker() {
+        var firstword = document.getElementById("generatedOne").innerText;
+        var secondword = document.getElementById("generatedTwo").innerText;
+        var thirdword = document.getElementById("generatedThree").innerText;
+        var svarmulighed1 = document.getElementById("rec_mode1");
+        var svarmulighed2 = document.getElementById("rec_mode2");
+        var svarmulighed3 = document.getElementById("rec_mode3");
+
+        var svar1 = svarmulighed1.options[svarmulighed1.selectedIndex].text;
+        var svar2 = svarmulighed2.options[svarmulighed2.selectedIndex].text;
+        var svar3 = svarmulighed3.options[svarmulighed3.selectedIndex].text;
+
+        if (
+          (firstword === svar1) &
+          (secondword === svar2) &
+          (thirdword === svar3)
+        ) {
+          console.log("CORRECT");
+          document.getElementById("wrongOrRight").innerText = "Correct answer";
+        } else {
+          console.log("WRONG");
+          document.getElementById("wrongOrRight").innerText =
+            "One or more answers were wrong";
+        }
+      }
+    </script>
   </body>
 </html>

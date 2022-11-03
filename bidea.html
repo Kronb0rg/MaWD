@@ -36,9 +36,14 @@
       </div>
     </header>
 
-    <!-- generated text-->
-    <h1 class="TheaderIdeah1">Press the button to find the word to type into the input field</h1>
-    <button onclick="genWord()">make words</button>    <h2 id="wordToType">Your generated word will appear here</h2>
+    <div class="tHeaderProductsTopInfo">    
+      <h1>Press the button to find the word to type into the input field</h1>
+      
+      <div class="buttonContainer"></div><button onclick="genWord()">make words</button>    
+      
+      <h2 id="wordToType">Your generated word will appear here</h2>
+    </div>
+
 
     <script>
       function genWord() {
@@ -170,8 +175,10 @@
   ></select>
 </div>
 </div>
-<button onclick="asnwerVerify()">Check answers</button>
-<h2 id="wrongOrRight"></h2>
+<div class="buttonContainer">
+  <button onclick="asnwerVerify()">Check answers</button>
+  <h2 id="wrongOrRight"></h2></div>
+
 <!-- the script that creates the list of options an inserts it into the drop down menus -->
 <script>
 let optionList1 = document.getElementById("rec_mode1").options;
@@ -198,7 +205,7 @@ let options = [
   },
   {
     text: "6",
-    value: "butcher ",
+    value: "butcher",
   },
 ];
 options.forEach((option) =>
@@ -214,9 +221,11 @@ function asnwerVerify() {
     console.log(firstword)
 
     if (
-          (firstword === svar1)
+          (firstword == svar1)
         ) {
           console.log("CORRECT");
+          console.log(svar1);
+          console.log(firstword);
           document.getElementById("wrongOrRight").innerText = "Correct answer";
         } else {
           console.log("WRONG");
